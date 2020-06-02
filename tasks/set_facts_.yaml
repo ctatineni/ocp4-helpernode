@@ -38,8 +38,8 @@
   - set_fact:
       services:
         - named
-        - haproxy
         - httpd
+        - haproxy
         - rpcbind
         - nfs-server
         - nfs-lock
@@ -52,8 +52,8 @@
         - bind
         - bind-utils
         - firewalld
-        - haproxy
         - httpd
+        - haproxy
         - vim
         - bash-completion
         - python3-libselinux
@@ -78,8 +78,8 @@
   - set_fact:
       services:
         - named
-        - haproxy
         - httpd
+        - haproxy
         - rpcbind
         - nfs-server
   when: ansible_distribution_major_version == "8"
