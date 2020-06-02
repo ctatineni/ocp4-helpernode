@@ -309,6 +309,11 @@
     systemd:
       daemon_reload: yes
     when: not staticips
+    
+  - name: restart httpd
+    service:
+      name: httpd
+      state: restarted
 
   - name: Starting services
     service:
